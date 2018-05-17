@@ -16,24 +16,17 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/backgroundPrimary"
+            android:src="@drawable/vinyl_play"
             android:scaleType="centerCrop" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/album"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/album"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/backgroundSecondary" />
-
-    </LinearLayout>
+        android:layout_weight="1"
+        />
 
 
 </LinearLayout>
