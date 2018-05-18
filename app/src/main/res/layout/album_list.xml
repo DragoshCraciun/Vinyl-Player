@@ -10,12 +10,12 @@
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="24dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ico_artist"/>
 
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="16sp"
             android:textColor="@color/textPrimary"
             tools:text="The Artist Name"/>
 
@@ -34,12 +34,12 @@
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="24dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ico_album"/>
 
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="16sp"
             android:textColor="@color/textPrimary"
             tools:text="The Album Name"/>
 
@@ -59,12 +59,12 @@
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="24dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_gravity="center_vertical"
             android:src="@drawable/ico_duration"/>
 
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="16sp"
             android:textColor="@color/textPrimary"
             tools:text="Duration of Album"/>
 
@@ -83,14 +83,14 @@
     <ImageView
         android:id="@+id/albumCover"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="160dp"
         android:layout_margin="16dp" />
 
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -105,16 +105,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song1"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -129,16 +129,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song2"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -153,16 +153,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song3"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -177,16 +177,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song4"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -201,16 +201,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song5"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -225,16 +225,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song6"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -249,9 +249,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song7"/>
 
     </LinearLayout>
 
@@ -259,7 +259,7 @@
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -274,16 +274,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song8"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
+        android:layout_height="18dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -298,9 +298,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:textColor="@color/textPrimary"
-            tools:text="The Artist Name"/>
+            tools:text="Song9"/>
 
     </LinearLayout>
 
