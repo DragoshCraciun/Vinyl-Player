@@ -1,30 +1,28 @@
 package com.galacticcoders.vinyl_player;
 
-//TODO the entire comments on this page
-
 /**
- * {@link com.example.android.miwok.Album} represents a vocabulary word that the user wants to learn.
- * It contains a default translation and a Miwok transaltion for that word.
+ * {@link com.galacticcoders.vinyl_player.Album} represents an album that the user wants to listen.
+ * It contains data about, artist names, album name, duration, album cover and list of songs.
  */
 
 public class Album {
 
-    /** Default translation for the word */
+    /** Name of artist */
     private String mArtistName;
 
-    /** Miwok translation for the word */
+    /** Name of album */
     private String mAlbumName;
 
-    /** Default translation for the word */
+    /** Duration of the entire album */
     private String mDuration;
 
-    /** Image resource ID for the word */
+    /** Image resource ID for the album cover */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    /** Constant value that represents no image was provided for this word */
+    /** Constant value that represents no image was provided for this album */
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    /** Miwok translation for the word */
+    /** List of songs */
     private String mSong1;
     private String mSong2;
     private String mSong3;
@@ -36,12 +34,21 @@ public class Album {
     private String mSong9;
 
 
-
     /**
-     * Create a new Word object.
-     * @param defaultTranslation is the word in a language that the user is already
-     *                           familiar with (such as English)
-     * @param miwokTranslation is the word in the Miwok language
+     * Create a new Album object.
+     * @param ArtistName is the name of the artist
+     * @param AlbumName is the name of album
+     * @param Duration is the duration of the album
+     * @param imageResourceId is the image of the album cover
+     * @param Song1 is the name of the first song in the album
+     * @param Song2 is the name of the second song in the album
+     * @param Song3 is the name of the third song in the album
+     * @param Song4 is the name of the fourth song in the album
+     * @param Song5 is the name of the fifth song in the album
+     * @param Song6 is the name of the sixth song in the album
+     * @param Song7 is the name of the seventh song in the album
+     * @param Song8 is the name of the eighth song in the album
+     * @param Song9 is the name of the ninth song in the album
      */
 
     public Album(String ArtistName, String AlbumName, String Duration, int imageResourceId, String Song1, String Song2, String Song3,
@@ -63,40 +70,40 @@ public class Album {
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the artist name.
      */
     public String getArtistName() {
         return mArtistName;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the album name.
      */
     public String getAlbumName() {
         return mAlbumName;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the duration of the album.
      */
     public String getDuration() {
         return mDuration;
     }
 
     /**
-     * Return the image resource ID of the word.
+     * Return the image resource ID of the album.
      */
     public int getImageResourceId() { return mImageResourceId; }
 
     /**
-     * Returns whether or not there is an image for this word.
+     * Returns whether or not there is an image for this album.
      */
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the name of the songs.
      */
     public String getSong1() {
         return mSong1;

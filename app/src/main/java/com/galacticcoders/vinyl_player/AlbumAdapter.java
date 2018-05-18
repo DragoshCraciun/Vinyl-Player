@@ -15,29 +15,24 @@ import com.galacticcoders.vinyl_player.R;
 
 import java.util.ArrayList;
 
-//TODO edit all the comments here
 
 /**
- * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
- * based on a data source, which is a list of {@link Word} objects.
+ * {@link AlbumAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
+ * based on a data source, which is a list of {@link Album} objects.
  */
 
 public class AlbumAdapter extends ArrayAdapter<Album> {
 
     /**
-     * This is our own custom constructor (it doesn't mirror a superclass constructor).
-     * The context is used to inflate the layout file, and the list is the data we want
+     * This is my own custom constructor (it doesn't mirror a superclass constructor).
+     * The context is used to inflate the layout file, and the list is the data needed
      * to populate into the lists.
      *
      * @param context The current context. Used to inflate the layout file.
-     * @param words   A List of words objects to display in a list
+     * @param Albums   A List of Albums objects to display in a list
      */
-    public AlbumAdapter(Activity context, ArrayList<Album> words) {
-        // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
-        // the second argument is used when the ArrayAdapter is populating a single TextView.
-        // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
-        // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context, 0, words);
+    public AlbumAdapter(Activity context, ArrayList<Album> Albums) {
+        super(context, 0, Albums);
     }
 
     /**
@@ -58,84 +53,84 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.album_list, parent, false);
         }
 
-        // Get the {@link Word} object located at this position in the list
+        // Get the {@link Album} object located at this position in the list
         Album currentAlbum = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID artistName
         TextView ArtistNameTextView = (TextView) listItemView.findViewById(R.id.artistName);
-        // Get the miwok translation from the current Word object and
+        // Get the artist name from the current Album object and
         // set this text on the name TextView
         ArtistNameTextView.setText(currentAlbum.getArtistName());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the album_list.xml layout with the ID albumName
         TextView AlbumNameTextView = (TextView) listItemView.findViewById(R.id.albumName);
-        // Get the default translation from the current Word object and
+        // Get the album name from the current Album object and
         // set this text on the name TextView
         AlbumNameTextView.setText(currentAlbum.getAlbumName());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID duration
         TextView DurationTextView = (TextView) listItemView.findViewById(R.id.duration);
-        // Get the miwok translation from the current Word object and
+        // Get the duration of album from the current Album object and
         // set this text on the name TextView
         DurationTextView.setText(currentAlbum.getDuration());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song1
         TextView Song1TextView = (TextView) listItemView.findViewById(R.id.song1);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song1TextView.setText(currentAlbum.getSong1());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song2
         TextView Song2TextView = (TextView) listItemView.findViewById(R.id.song2);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song2TextView.setText(currentAlbum.getSong2());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song3
         TextView Song3TextView = (TextView) listItemView.findViewById(R.id.song3);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song3TextView.setText(currentAlbum.getSong3());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song4
         TextView Song4TextView = (TextView) listItemView.findViewById(R.id.song4);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song4TextView.setText(currentAlbum.getSong4());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song5
         TextView Song5TextView = (TextView) listItemView.findViewById(R.id.song5);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song5TextView.setText(currentAlbum.getSong5());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song6
         TextView Song6TextView = (TextView) listItemView.findViewById(R.id.song6);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song6TextView.setText(currentAlbum.getSong6());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song7
         TextView Song7TextView = (TextView) listItemView.findViewById(R.id.song7);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song7TextView.setText(currentAlbum.getSong7());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song8
         TextView Song8TextView = (TextView) listItemView.findViewById(R.id.song8);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song8TextView.setText(currentAlbum.getSong8());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the album_list.xml layout with the ID song9
         TextView Song9TextView = (TextView) listItemView.findViewById(R.id.song9);
-        // Get the miwok translation from the current Word object and
+        // Get the song name from the current Album object and
         // set this text on the name TextView
         Song9TextView.setText(currentAlbum.getSong9());
 
-        // Find the ImageView in the list_item.xml layout with the ID image.
+        // Find the ImageView in the album_list.xml layout with the ID albumCover.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.albumCover);
-        // Check if an image is provided for this word or not
+        // Check if an image is provided for this Album or not
         if (currentAlbum.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
             imageView.setImageResource(currentAlbum.getImageResourceId());
@@ -147,8 +142,7 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
         }
 
 
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
-        // so that it can be shown in the ListView
+        // Return the whole list item layout so that it can be shown in the ListView
         return listItemView;
     }
 }
