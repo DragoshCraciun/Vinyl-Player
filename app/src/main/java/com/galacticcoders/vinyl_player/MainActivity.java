@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -34,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         albums.add(new Album("Pink Floyd","The Dark Side of the Moon", "42:49", R.drawable.pink_floyd,"Speak to Me / Breathe 3:58", "On the Run 3:35",
                 "Time 7:05","The Great Gig in the Sky 4:44", "Money 6:23", "Us and Them 7:50",
                 "Any Colour You Like 3:26", "Brain Damage 3:47", "Eclipse 2:01"));
-
 
         final AlbumAdapter adapter = new AlbumAdapter(this, albums);
 
