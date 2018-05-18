@@ -18,22 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the album.
-        ListView album = (ListView) findViewById(R.id.album);
-
-        // Set a click listener on that view.
-        album.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            // The code in this method will execute when the album category is clicked on.
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View v, int position, long arg3) {
-                // Create a new intent to open the {@link PlayActivity}
-                Intent albumIntent = new Intent(MainActivity.this, PlayActivity.class);
-
-                // Start the new activity.
-                startActivity(albumIntent);
-            }
-        });
-
         ArrayList<Album> albums = new ArrayList<Album>();
         albums.add(new Album("Eric Clapton","Slowhand", "39:06", R.drawable.eric_clapton, "Cocaine 3:38", "Wonderful Tonight 3:41",
                 "Lay Down Sally 3:56","Next Time You See Her 4:01", "We're All the Way 2:32", "The Core 8:45",
@@ -52,11 +36,30 @@ public class MainActivity extends AppCompatActivity {
                 "Any Colour You Like 3:26", "Brain Damage 3:47", "Eclipse 2:01"));
 
 
-        AlbumAdapter adapter = new AlbumAdapter(this, albums);
+        final AlbumAdapter adapter = new AlbumAdapter(this, albums);
 
-        ListView listView = (ListView) findViewById(R.id.album);
+        // Find the View that shows the album.
+        final ListView albumCover = (ListView) findViewById(R.id.album);
 
-        listView.setAdapter(adapter);
+        // Set a click listener on that view.
+        albumCover.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            // The code in this method will execute when the album category is clicked on.
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View v, int position, long arg3) {
+                // Create a new intent to open the {@link PlayActivity}
+                Intent albumIntent = new Intent(MainActivity.this, PlayActivity.class);
+                int Image = adapter.getItem(position).getImageResourceId();
+                String Song = adapter.getItem(position).getSong1();
+                String Artist = adapter.getItem(position).getArtistName();
+                albumIntent.putExtra("cover", Image);
+                albumIntent.putExtra("song", Song);
+                albumIntent.putExtra("artist", Artist);
+                // Start the new activity.
+                startActivity(albumIntent);
+            }
+        });
+
+        albumCover.setAdapter(adapter);
 
 
 
