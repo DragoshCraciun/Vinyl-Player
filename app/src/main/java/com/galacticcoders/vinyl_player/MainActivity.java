@@ -12,6 +12,12 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+ * https://icons8.com/
+ * https://theartsdesk.com/new-music/theartsdesk-vinyl-34-trent-reznor-shpongle-roni-size-willie-nelson-and-more
+ * https://en.wikipedia.org/wiki/Slowhand (and other similar pages)
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -20,20 +20,6 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        // Find the Button in the activity_play.xml layout with the ID backButton
-        Button backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-
-            // The code in this method will be executed when the backButton is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link MainActivity}
-                Intent mainScreenIntent = new Intent(PlayActivity.this, MainActivity.class);
-                // Start the new activity
-                startActivity(mainScreenIntent);
-            }
-        });
-
         // Find the ImageView in the album_list.xml layout with the ID backButton
         albumCover = (ImageView) findViewById(R.id.albumCover);
         // Find the TextView in the album_list.xml layout with the ID songName
